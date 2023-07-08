@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0 ;
+}
+
+ .container{
+     width: 1140px;
+     margin: 0 auto;
+ }
+
+ .a{
+     text-decoration: none;
+ }
+
+.hero-block input{
+    display: none;
+
+}.hero-block img{
+     width: 330px;
+     height: 330px;
+     animation: img 1.5s;
+
+ }
+
+ .tabs img{
+     width: 300px;
+     height: 300px;
+ }
+
+@keyframes  img {
+    0% {
+        transform: rotate(-30deg) translateY(-100%);
+        opacity: 0;
+
+    }
+    100%{
+transform: rotate(0 ) translateY(0 );
+opacity: 1;}
+
+}
+
+
+#footbal:checked~.bmw,
+#footbal:checked~ .valibol,
+#footbal:checked~ .city{
+    display: none;
+}
+#bmw:checked~.footbal,
+#bmw:checked~ .valibol,
+#bmw:checked~ .city{
+    display: none;
+}
+#valibol:checked~.footbal,
+#valibol:checked~ .bmw,
+#valibol:checked~ .city{
+    display: none;
+}
+
+#city:checked~ .footbal,
+#city:checked~ .bmw,
+#city:checked~ .valibol{
+    display: none;
+}
+
+#hero{
+    background: linear-gradient(10deg,deepskyblue,darkviolet,blueviolet,dimgray,cornflowerblue);
+    min-height: 100vh;
+}
+
+.labels label{
+    padding: 10px 30px;
+    background: linear-gradient(20deg,greenyellow,gray,sandybrown);
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+    color: blanchedalmond;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.labels label :hover{
+    background: linear-gradient(20deg,gold,blueviolet);
+    transform:scale(1.1);
+}
+
+.labels{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    animation: ani 1.5s alternate;
+
+}
+
+@keyframes ani {
+  0%{
+   transform: translatey(-1000px);
+    opacity:  0;
+}
+    50%{
+opacity: .3;
+
+}
+ 100%{
+    transform: translatey(0);
+}
+}
+
+.hero-block img  {
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+    animation: img 1.5s;
+}
+
+
